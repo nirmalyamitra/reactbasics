@@ -1,8 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//Components
+import Header from './components/header'
+
+const App = () => {
+    return (
+        <div>
+            <Header/>
+        </div>
+    )
+}
+
+
+ReactDom.render(<App/>, document.querySelector('#root'));
